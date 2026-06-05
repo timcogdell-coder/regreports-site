@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIMS — Pretreatment Information Management System | Regreports</title>
+  <meta name="description" content="PIMS by Regreports: the system of record for a municipal pretreatment program — IU permits, sampling, automatic violation detection, surcharges, and enforcement, built to 40 CFR 403." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          brand: { 50:"#ecfeff",100:"#cffafe",500:"#06b6d4",600:"#0891b2",700:"#0e7490",800:"#155e75",900:"#164e63" },
+          ink: { 900:"#0f172a",700:"#334155",500:"#64748b" },
+        },
+        fontFamily: { sans: ["Inter","system-ui","sans-serif"] },
+      } },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style> body { font-family: Inter, system-ui, sans-serif; } </style>
+</head>
+<body class="bg-white text-ink-700 antialiased">
+
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-100">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-extrabold text-ink-900 text-lg">
+        <svg class="w-7 h-7 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5C12 2.5 5 9 5 14a7 7 0 0 0 14 0c0-5-7-11.5-7-11.5Z"/><path d="M8.5 14.5h2l1.5 3 2-6 1 3h2" /></svg>
+        Regreports
+      </a>
+      <div class="flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-brand-700">← Home</a>
+        <a href="index.html#contact" class="rounded-lg bg-brand-700 px-4 py-2 font-semibold text-white hover:bg-brand-800 transition">Request a demo</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 pt-16 pb-14 text-center">
+      <span class="inline-block rounded-full bg-brand-100 text-brand-800 text-xs font-semibold px-3 py-1 mb-5">Flagship product</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-ink-900">Pretreatment Information Management System</h1>
+      <p class="mt-5 text-lg text-ink-500 max-w-2xl mx-auto">
+        PIMS is the system of record for a municipal pretreatment program — every permit, sample, violation,
+        surcharge, and enforcement action in one auditable place, built to the federal pretreatment
+        regulations (40 CFR 403).
+      </p>
+    </div>
+  </section>
+
+  <!-- Data flow -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-extrabold text-ink-900 text-center">How a sample becomes an enforcement action</h2>
+    <div class="mt-10 grid md:grid-cols-4 gap-4">
+      <div class="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
+        <div class="text-brand-700 font-bold text-sm">1 · Submit</div>
+        <p class="mt-2 text-sm text-ink-500">An industrial user submits a sample — or a coordinator drags in the lab-report PDF and OCR fills it.</p>
+      </div>
+      <div class="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
+        <div class="text-brand-700 font-bold text-sm">2 · Check</div>
+        <p class="mt-2 text-sm text-ink-500">The compliance engine compares each result to the permit limits and records any violations.</p>
+      </div>
+      <div class="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
+        <div class="text-brand-700 font-bold text-sm">3 · Respond</div>
+        <p class="mt-2 text-sm text-ink-500">The ERG matrix selects the right enforcement response and drafts the letter.</p>
+      </div>
+      <div class="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
+        <div class="text-brand-700 font-bold text-sm">4 · Approve</div>
+        <p class="mt-2 text-sm text-ink-500">The coordinator reviews, edits, and approves — with a full audit trail behind every step.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities -->
+  <section class="bg-slate-50 border-y border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-extrabold text-ink-900 text-center">What's inside</h2>
+      <div class="mt-10 grid sm:grid-cols-2 gap-x-10 gap-y-8">
+        <div>
+          <h3 class="font-bold text-ink-900">Permits, built or imported</h3>
+          <p class="mt-2 text-sm text-ink-500">Generate a draft permit from the facility's categorical standard (e.g. 40 CFR 433 Metal Finishing, 413 Electroplating), or upload a scanned permit and review the parsed limits before they go live. Permanent, never-reused IU permit numbers per 40 CFR 127.26(h).</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-ink-900">Lab results without re-keying</h3>
+          <p class="mt-2 text-sm text-ink-500">OCR reads lab-report PDFs from multiple labs and formats — correctly handling non-detects, unit conversions to mg/L, and reporting limits — then matches each result to the permit.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-ink-900">Compliance you can defend</h3>
+          <p class="mt-2 text-sm text-ink-500">Daily-maximum, monthly-average, and weekly-average checks; range limits like pH; the sufficiently-sensitive-method rule (40 CFR 122.44(i)); and below-PQL handling — all applied consistently and logged.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-ink-900">Surcharges &amp; billing data</h3>
+          <p class="mt-2 text-sm text-ink-500">Flow-weighted BOD / TSS / color surcharges computed from reviewed monthly flow reports and the month's sample concentrations, with a finance-ready view.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-ink-900">Enforcement response guide</h3>
+          <p class="mt-2 text-sm text-ink-500">A configurable ERG decision matrix maps each violation to an enforcement level and drafts the correspondence, keeping responses consistent and timely.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-ink-900">Roles, certification &amp; audit</h3>
+          <p class="mt-2 text-sm text-ink-500">Separate access for industrial users, coordinators, finance, and admins; signed monthly certifications (40 CFR 403.12(l)); and a tamper-evident audit log on every change.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it's for -->
+  <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-2xl font-extrabold text-ink-900">Built for the people who run the program</h2>
+    <p class="mt-4 text-ink-500">
+      PIMS is designed for POTW pretreatment coordinators and the industrial users they regulate — and for the
+      finance and management staff who depend on accurate, defensible data. It maps to how your program actually
+      works, so it fits your process instead of fighting it.
+    </p>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-6xl mx-auto px-6 pb-20">
+    <div class="rounded-2xl bg-brand-700 px-8 py-12 text-center text-white">
+      <h2 class="text-3xl font-extrabold">See it on your data</h2>
+      <p class="mt-3 text-brand-100 max-w-xl mx-auto">Bring a couple of permits and lab reports — we'll show you the full loop in minutes.</p>
+      <a href="mailto:hello@regreports.com?subject=PIMS%20demo%20request" class="mt-8 inline-block rounded-lg bg-white px-6 py-3 font-semibold text-brand-800 hover:bg-brand-50 transition">Request a demo</a>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-ink-500">
+      <a href="index.html" class="flex items-center gap-2 font-bold text-ink-900">
+        <svg class="w-5 h-5 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5C12 2.5 5 9 5 14a7 7 0 0 0 14 0c0-5-7-11.5-7-11.5Z"/></svg>
+        Regreports
+      </a>
+      <p>&copy; <span id="year"></span> Regreports. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

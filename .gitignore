@@ -1,0 +1,9 @@
+# Build output (if a Tailwind/CLI build is added later)
+node_modules/
+assets/tailwind.css
+dist/
+
+# Editor / OS
+.DS_Store
+*.swp
+.vscode/
