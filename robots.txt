@@ -1,5 +1,3 @@
-# Pre-launch: discourage crawling while the site is in testing.
-# The authoritative signal is the <meta name="robots" content="noindex"> on each
-# page. To go live, remove the meta tags and replace this with "Disallow:" (allow all).
+# Live — allow all crawlers.
 User-agent: *
-Disallow: /
+Disallow:
