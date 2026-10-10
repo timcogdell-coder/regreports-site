@@ -187,6 +187,66 @@ h3 { font-weight: 700; font-size: 1.08rem; letter-spacing: -0.01em; }
 .shot figcaption { padding: 12px 16px; font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--line); background: var(--surface-2); }
 .shots-stack { display: flex; flex-direction: column; gap: 32px; margin: 44px auto 0; max-width: 940px; }
 
+/* OCR import review — a faithful recreation of the in-app screen, fictional data */
+.appbar { display: flex; align-items: baseline; gap: 12px; background: #141925; color: #fff; padding: 13px 18px; font-family: var(--display); font-weight: 700; font-size: 0.92rem; }
+.appbar span { font-family: var(--body); font-weight: 500; font-size: 0.82rem; color: #aeb6cf; }
+.ocr { padding: 20px; background: var(--surface); }
+.ocr-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.ocr-head strong { font-family: var(--mono); font-size: 0.88rem; color: var(--ink); }
+.ocr-meta { font-size: 0.8rem; color: var(--muted); }
+.ocr-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+.ocr-sample { font-size: 0.85rem; color: var(--text); margin-bottom: 6px; }
+.ocr-tablewrap { overflow-x: auto; }
+.ocr-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 460px; }
+.ocr-table th { text-align: left; font-weight: 600; color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 9px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.ocr-table td { padding: 11px 10px; border-bottom: 1px solid var(--line); color: var(--text); }
+.ocr-table td.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); }
+.ocr-table tr.nd td { color: var(--muted); }
+.badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
+.b-ok { color: var(--green); background: var(--green-soft); }
+.b-amber { color: var(--amber); background: var(--amber-soft); }
+.b-red { color: var(--red); background: var(--red-soft); }
+.b-nd { color: var(--muted); background: var(--surface-2); }
+.ocr-note { font-size: 0.8rem; color: var(--muted); margin: 16px 0 14px; }
+.ocr-btn { background: var(--accent); color: #fff; border: none; border-radius: var(--radius-sm); padding: 10px 18px; font-family: var(--body); font-weight: 600; font-size: 0.9rem; }
+
+/* ERG decision matrix — editable enforcement responses (fictional recreation) */
+.erg-sub { font-size: 0.84rem; color: var(--muted); margin: 0 0 16px; max-width: 72ch; }
+.ocr-table td.lvl { font-weight: 700; white-space: nowrap; }
+.lvl-warn  { color: var(--amber); }
+.lvl-call  { color: #2b6cb0; }
+.lvl-ao    { color: var(--red); }
+.lvl-civil { color: #8a2f6b; }
+.lvl-term  { color: var(--ink); }
+.erg-editlink { background: none; border: 1px solid var(--line); border-radius: 6px; padding: 4px 12px; font-size: 0.78rem; font-weight: 600; color: var(--muted); cursor: pointer; font-family: var(--body); }
+.erg-editrow td { background: var(--accent-soft); }
+.erg-editor { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-end; padding: 6px 0; }
+.erg-note { font-size: 0.78rem; color: var(--accent-dk); font-weight: 700; width: 100%; }
+.erg-field { display: flex; flex-direction: column; gap: 5px; }
+.erg-field label { font-size: 0.7rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.erg-field select, .erg-field input { font-family: var(--body); font-size: 0.88rem; padding: 7px 10px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink); }
+.erg-save { background: var(--accent); color: #fff; border: none; border-radius: 7px; padding: 8px 16px; font-weight: 600; font-size: 0.85rem; cursor: pointer; font-family: var(--body); }
+.erg-cancel { background: var(--surface); color: var(--muted); border: 1px solid var(--line); border-radius: 7px; padding: 8px 16px; font-weight: 600; font-size: 0.85rem; cursor: pointer; font-family: var(--body); }
+
+/* Communications log — CA ↔ IU correspondence (fictional recreation) */
+.comm-card { border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.comm-card:last-child { margin-bottom: 0; }
+.comm-card.alert { border-color: #f0b74e; background: #fffaf0; }
+.comm-title { font-family: var(--display); font-weight: 700; font-size: 0.95rem; color: var(--ink); display: block; margin-bottom: 4px; }
+.comm-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
+.comm-row:first-of-type { border-top: none; }
+.comm-main { min-width: 0; font-size: 0.88rem; }
+.comm-co { font-weight: 700; color: var(--ink); }
+.comm-meta { color: var(--muted); }
+.comm-dir { font-weight: 600; color: var(--text); }
+.comm-fu { color: #c05621; font-weight: 600; }
+.comm-viol { display: inline-block; margin-top: 6px; font-size: 0.74rem; background: var(--amber-soft); color: var(--amber); border: 1px solid #f0c674; border-radius: 5px; padding: 2px 8px; }
+.comm-subj { font-size: 0.88rem; margin-top: 5px; color: var(--ink); font-weight: 600; }
+.comm-sum { font-size: 0.82rem; color: var(--muted); margin-top: 3px; }
+.comm-people { font-size: 0.76rem; color: var(--muted); margin-top: 6px; font-family: var(--mono); }
+.comm-actions { display: flex; gap: 6px; flex-shrink: 0; }
+.comm-btn { background: var(--surface); color: var(--muted); border: 1px solid var(--line); border-radius: 7px; padding: 4px 11px; font-size: 0.76rem; font-weight: 600; cursor: pointer; font-family: var(--body); white-space: nowrap; }
+
 /* ── Footer ───────────────────────────────────────────────────────────── */
 .site-footer { border-top: 1px solid var(--line); }
 .footer-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-block: 36px; font-size: 0.88rem; color: var(--muted); }
